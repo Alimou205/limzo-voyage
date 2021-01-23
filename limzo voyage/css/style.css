@@ -16,22 +16,24 @@ a{
     --secondary-color: #1c3fa8;
     --violet-color: #6050dc;
     --light-color: #f4f4f4;
+    --red-color:	#FF0000;
 }
 .navigation{
-    background-color:var(--violet-color);
-    color: var(--light-color);
+    background-color:var(--violet-color) !important;
+    color: var(--light-color) !important;
 
 }
 .navigation .logo{
-    color: var(--light-color);
+    color: var(--light-color) !important;
 }
 .navigation .nav-link{
-    color: var(--light-color);
+    color: var(--light-color) !important;
     font-weight: bold;
     font-size: 17px;
+    border-bottom: 2px solid transparent !important;
 }
 .navigation .nav-link:hover{
-    border-bottom: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--light-color) !important;
 }
 
 /*background slide*/
@@ -42,13 +44,21 @@ a{
   background-position: cover;
   object-fit: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+  text-transform: capitalize;
 }
+/*
 .slide-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+*/
 .read{
     cursor: pointer;
 }
@@ -66,9 +76,70 @@ a{
     padding-top: 15px;
     color: var(--light-color);
 }
-/* */
-.col-sm-6 img{
-    margin: 20px;
-    height: 200px;
-    width: 200px;
+/*destination */
+.best-services{
+    background-image: url('../image/background/pexels-matt-hardy-2624031.jpg');
+    background-position: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
 }
+.titre-text{
+    color: var(--violet-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+.cards-formes{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--violet-color);
+    text-align: center;
+    color: var(--light-color);
+    height: 300px;
+}
+.cards-formes .icon-destination{
+    height: 100px;
+    width: 100px;
+
+}
+
+
+.notification{
+    color: var(--light-color)!important;
+}
+/* forfaits*/
+.titre-offres{
+    color: var(--violet-color);
+    text-transform: uppercase;
+}
+.prix{
+    color: var(--red-color);
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-prix .valeur{
+    height: 50px;
+    width: 50px;
+}
+/* decouvrez la cote d'ivoire*/
+.decouvrez-bg{
+    background-image: url('../image/background/away-2946031_1920.jpg');
+   
+}
+.decouvrez-titre{
+    color: var(--light-color);
+}
+/* footer*/
+.footer-bg{
+    background-color: var(--violet-color)
+}
+@media screen 
